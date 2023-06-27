@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Costum CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="score">
+                <h3>Player: <span class="player">0</span></h3>
+            </div>
+            <div class="score">
+                <h3>Computer: <span class="computer">0</span></h3>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="options" data-name="rock">
+            <div class="option">
+                <i class="fa-solid fa-hand-back-fist" id="rock"></i>
+            </div>
+            <div class="option" data-name="paper">
+                <i class="fa-solid fa-hand" id="paper"></i>
+            </div>
+            <div class="option" data-name="scissors">
+                <i class="fa-solid fa-hand-scissors" id="scissors"></i>
+            </div>
+        </div>
+
+        <div class="status">
+            <p class="message"></p>
+            <h1 class="winner"></h1>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
+</body>
+</html>

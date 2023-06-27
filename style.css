@@ -1,0 +1,103 @@
+:root {
+    --bg-color: rgb(8, 52, 58);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.options {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.option {
+    padding: 40px;
+    border: solid 3px #fff;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #fff;
+    color: var(--bg-color);
+}
+
+.option i {
+    font-size: 70px;
+}
+
+.status {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 3px #fff;
+    background: #fff;
+    color: var(--bg-color);
+    display: none;
+}
+
+.status h1 {
+    padding: 0;
+}
+
+.message {
+    text-align: center;
+}
+
+.filled {
+    background: #fff;
+    color: var(--bg-color);
+}
+
+@media screen and (max-width: 768px) {
+    .option {
+        padding: 30px;
+    }
+
+    .option i {
+        font-size: 50px;
+    }
+
+    .status {
+        width: 450px;
+    }
+}
